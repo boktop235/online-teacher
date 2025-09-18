@@ -1,0 +1,168 @@
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-theme header {
+  background-color: #2d2d2d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .main_logo p {
+  color: #ff6b6b;
+}
+
+body.dark-theme .nav_button {
+  color: #ffffff;
+}
+
+body.dark-theme .nav_button:hover {
+  color: #000;
+  background-color: #c8f7c5;
+}
+
+body.dark-theme .main_info,
+body.dark-theme .keys,
+body.dark-theme .about_me {
+  background-color: #2d2d2d;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .main_info h1,
+body.dark-theme .keys h2,
+body.dark-theme .about_me h2,
+body.dark-theme .key_content h3 {
+  color: #ffffff;
+}
+
+body.dark-theme .main_subtitle,
+body.dark-theme .stat_label,
+body.dark-theme .key_content p,
+body.dark-theme .about_text p,
+body.dark-theme .conditions p {
+  color: #cccccc;
+}
+
+body.dark-theme .conditions {
+  background-color: #3d3d3d;
+}
+
+body.dark-theme .conditions h3 {
+  color: #ffffff;
+}
+
+body.dark-theme .key_card {
+  background-color: #3d3d3d;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .key_card:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .key_number {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+body.dark-theme footer {
+  background-color: #2d2d2d;
+}
+
+body.dark-theme .footer_contacts p,
+body.dark-theme .footer_social p {
+  color: #ffffff;
+}
+
+body.dark-theme .footer_social a {
+  color: #c8f7c5;
+}
+
+body.dark-theme .footer_social a:hover {
+  color: #ffb6c1;
+}
+
+/* Анимация перехода */
+body.dark-theme * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Стили для кнопки переключения темы */
+.theme-toggle-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn p,
+.theme-toggle-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.button-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #c8f7c5, #4caf50);
+  transition: left 0.4s ease;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.theme-toggle-btn.active .button-overlay {
+  left: 0;
+}
+
+/* Анимация при клике */
+@keyframes themeSwitch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.theme-toggle-btn:active {
+  animation: themeSwitch 0.3s ease;
+}
+
+/* Стили для основного логотипа */
+.main_logo {
+  font: inherit;
+}
+
+.main_logo p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Стили для логотипа в футере */
+.footer_logo .theme-toggle-btn {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Темная тема для кнопок */
+body.dark-theme .theme-toggle-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .main_logo p {
+  color: #ff6b6b;
+}
