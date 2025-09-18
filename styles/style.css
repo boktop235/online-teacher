@@ -59,11 +59,18 @@ header {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  background-color: #f0f0f0; /* Светло-серый фон для видимости */
+  border: 2px solid transparent; /* Прозрачная граница для плавного перехода */
 }
 
 .nav_button:hover {
   color: #000;
   background-color: #c8f7c5;
+}
+
+.nav_button:active,
+.nav_button:focus {
+  background-color: #a0e89c; 
 }
 
 section {
@@ -137,7 +144,7 @@ section h2:after {
   margin-top: 30px;
   border-radius: 15px;
   padding: 25px;
-  background-color: #f0fff0;
+  background-color: #f0f0f0;
 }
 
 .conditions h3 {
@@ -146,7 +153,6 @@ section h2:after {
   font-size: 1.8rem;
 }
 
-/* Секция с горизонтальным скроллом карточек */
 .keys {
   border-radius: 20px;
   padding: 40px;

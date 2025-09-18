@@ -14,6 +14,7 @@ body.dark-theme .main_logo p {
 
 body.dark-theme .nav_button {
   color: #ffffff;
+  background-color: #4f4f4f; 
 }
 
 body.dark-theme .nav_button:hover {
@@ -166,3 +167,6 @@ body.dark-theme .theme-toggle-btn {
 body.dark-theme .main_logo p {
   color: #ff6b6b;
 }
+
+
+
